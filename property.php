@@ -16,7 +16,7 @@ else
 		$to=mysql_real_escape_string($_POST['to']);
 		$time=time();
 
-		$query2="INSERT INTO `messages` VALUES('','$user_id','$to','$message','$time','0')";
+		$query2="INSERT INTO `messages` VALUES('','$user_id','$to','$message','$time','0', '0')";
 		$run2=mysqli_query($con,$query2);
 		$last_id=mysqli_insert_id($con);
 	}

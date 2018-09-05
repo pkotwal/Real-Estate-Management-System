@@ -29,7 +29,7 @@ session_start();
 			<div id="rent" class="row house-list"> 
 					<h4 class="section-title">Houses For Rent <span class="view-all"><a href="search.php?type=rent">(View All)</a></span></h4>
 				<?php
-					$query1="SELECT * FROM `listing` WHERE `type`='rent' ORDER BY `id` DESC LIMIT 6";
+					$query1="SELECT * FROM listing WHERE type='rent' ORDER BY id DESC LIMIT 6";
 					$run1=mysqli_query($con,$query1);
 					$num1=mysqli_num_rows($run1);
 	
